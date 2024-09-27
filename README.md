@@ -6,7 +6,7 @@
 ✨**Fonctionnalités :**
 
 - **Sélection de Dossier** : Les utilisateurs peuvent sélectionner deux répertoires à l'aide d'une boîte de dialogue.
-- **Affichage de Taille** : L'application affiche la taille de chaque répertoire sélectionné dans un format lisible (Ko, Mo ou Go).
+- **Affichage de Taille** : L'application affiche la taille de chaque répertoire sélectionné.
 - **Liste des Fichiers** : Le contenu de chaque répertoire est listé dans des widgets de liste séparés.
 - **Sélection Multiple** : Les utilisateurs peuvent sélectionner plusieurs fichiers de chaque répertoire pour les copier.
 - **Copie de Fichiers** : Les utilisateurs peuvent copier les fichiers sélectionnés d'un répertoire à l'autre en un seul clic.
