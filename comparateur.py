@@ -71,7 +71,7 @@ class DirectoryComparator(QWidget):
                 fp = os.path.join(dirpath, file)
                 total_size += os.path.getsize(fp)
         
-        return self.format_size(total_size)  # Format the size before returning
+        return self.format_size(total_size)  
 
     def format_size(self, size_bytes):
         """Format size in bytes to a more readable format."""
