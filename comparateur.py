@@ -13,28 +13,28 @@ class DirectoryComparator(QWidget):
         
         self.layout = QVBoxLayout()
         
-        # Initialisation des labels et listes
+        
         self.label1 = QLabel("Dossier 1: (Taille: 0 Ko)")
         self.label2 = QLabel("Dossier 2: (Taille: 0 Ko)")
         
         self.listWidget1 = QListWidget()
         self.listWidget2 = QListWidget()
         
-        # Définir le mode de sélection multiple
+      
         self.listWidget1.setSelectionMode(QListWidget.MultiSelection)
         self.listWidget2.setSelectionMode(QListWidget.MultiSelection)
         
-        # Boutons
+        
         self.selectButton1 = QPushButton("Sélectionner Dossier 1")
         self.selectButton2 = QPushButton("Sélectionner Dossier 2")
         self.copyButton = QPushButton("Copier")
         
-        # Connexion des boutons aux fonctions
+       
         self.selectButton1.clicked.connect(self.select_directory1)
         self.selectButton2.clicked.connect(self.select_directory2)
         self.copyButton.clicked.connect(self.copy_selected_files)
 
-        # Ajout des widgets à la mise en page
+        
         self.layout.addWidget(self.label1)
         self.layout.addWidget(self.listWidget1)
         self.layout.addWidget(self.selectButton1)
@@ -85,25 +85,25 @@ class DirectoryComparator(QWidget):
         return f"{size_gb:.2f} Go"  # Gigabytes
 
     def copy_selected_files(self):
-        # Vérifiez si les dossiers ont été sélectionnés
+        
         if not hasattr(self, 'directory1') or not hasattr(self, 'directory2'):
             QMessageBox.warning(self, "Erreur", "Veuillez sélectionner les deux dossiers.")
             return
         
-        # Vérifiez les fichiers sélectionnés dans le premier dossier
+       
         selected_items1 = self.listWidget1.selectedItems()
         selected_items2 = self.listWidget2.selectedItems()
 
         copied = False
         
-        # Copiez les fichiers depuis Dossier 1 vers Dossier 2
+      
         if selected_items1:
             for item in selected_items1:
                 file_to_copy = os.path.join(self.directory1, item.text())
                 shutil.copy(file_to_copy, self.directory2)
             copied = True
         
-        # Copiez les fichiers depuis Dossier 2 vers Dossier 1
+       
         if selected_items2:
             for item in selected_items2:
                 file_to_copy = os.path.join(self.directory2, item.text())
