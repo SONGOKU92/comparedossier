@@ -74,7 +74,7 @@ class DirectoryComparator(QWidget):
         return self.format_size(total_size)  
 
     def format_size(self, size_bytes):
-        """Format size in bytes to a more readable format."""
+        
         size_kb = size_bytes / 1024
         if size_kb < 1024:
             return f"{size_kb:.2f} Ko"  
