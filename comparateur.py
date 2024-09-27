@@ -112,7 +112,7 @@ class DirectoryComparator(QWidget):
 
         if copied:
             QMessageBox.information(self, "Succès", "Fichiers copiés avec succès.")
-            QApplication.quit()  # Ferme l'application après la copie
+            QApplication.quit()  
         else:
             QMessageBox.warning(self, "Erreur", "Veuillez sélectionner des fichiers à copier.")
 
