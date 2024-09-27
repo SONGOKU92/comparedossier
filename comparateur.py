@@ -77,12 +77,12 @@ class DirectoryComparator(QWidget):
         """Format size in bytes to a more readable format."""
         size_kb = size_bytes / 1024
         if size_kb < 1024:
-            return f"{size_kb:.2f} Ko"  # Kilobytes
+            return f"{size_kb:.2f} Ko"  
         size_mb = size_kb / 1024
         if size_mb < 1024:
-            return f"{size_mb:.2f} Mo"  # Megabytes
+            return f"{size_mb:.2f} Mo"  
         size_gb = size_mb / 1024
-        return f"{size_gb:.2f} Go"  # Gigabytes
+        return f"{size_gb:.2f} Go"  
 
     def copy_selected_files(self):
         
