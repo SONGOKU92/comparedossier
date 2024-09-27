@@ -10,7 +10,7 @@
 - **Liste des Fichiers** : Le contenu de chaque répertoire est listé dans des widgets de liste séparés.
 - **Sélection Multiple** : Les utilisateurs peuvent sélectionner plusieurs fichiers de chaque répertoire pour les copier.
 - **Copie de Fichiers** : Les utilisateurs peuvent copier les fichiers sélectionnés d'un répertoire à l'autre en un seul clic.
-- **Gestion des Erreurs** : L'application fournit des avertissements lorsque des actions requises ne sont pas effectuées, comme ne pas sélectionner de répertoires ou de fichiers.
+- **Gestion des Erreurs** : L'application fournit des avertissements lorsque des actions requises ne sont pas effectuées.
 
 
 💻 **OS**
