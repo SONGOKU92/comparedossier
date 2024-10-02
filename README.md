@@ -1,6 +1,8 @@
 📁 **Comparateur de dossiers**
 
  Ce projet est une application de comparaison de dossiers développée en Python utilisant la bibliothèque PyQt5 . Elle permet aux utilisateurs de comparer le contenu de deux répertoires, de visualiser leur taille et de copier des fichiers sélectionnés d'un répertoire à un autre.
+![comp](https://github.com/user-attachments/assets/5d54aae5-f65f-4cb8-847a-f38f8afc7976)
+
 
 
 ✨**Fonctionnalités :**
