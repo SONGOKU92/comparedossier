@@ -32,5 +32,5 @@
 - 🐍 [Python](https://www.python.org/downloads/) : Python est un langage de programmation utilisé pour ce projet.
 
 - 📦 [pip](https://pip.pypa.io/en/stable/) : "pip" est le gestionnaire de paquets pour Python.
-'''markdown
+```markdown
 pip install PyQt5
